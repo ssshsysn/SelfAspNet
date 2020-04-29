@@ -67,11 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Chap03\CheckBox.aspx" />
     <Content Include="Chap03\RadioButton.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chap03\CheckBox.aspx.cs">
+      <DependentUpon>CheckBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap03\CheckBox.aspx.designer.cs">
+      <DependentUpon>CheckBox.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Chap03\RadioButton.aspx.cs">
       <DependentUpon>RadioButton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
