@@ -67,10 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Chap03\RadioButton.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chap03\RadioButton.aspx.cs">
+      <DependentUpon>RadioButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap03\RadioButton.aspx.designer.cs">
+      <DependentUpon>RadioButton.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -89,7 +97,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="App_Start\" />
     <Folder Include="Chap02\" />
-    <Folder Include="Chap03\" />
     <Folder Include="Chap04\" />
     <Folder Include="Chap05\" />
     <Folder Include="Chap06\" />
