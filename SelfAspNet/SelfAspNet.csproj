@@ -72,12 +72,14 @@
     <Content Include="Chap03\FileUpload.aspx" />
     <Content Include="Chap03\RadioButton.aspx" />
     <Content Include="Chap03\Text.aspx" />
+    <Content Include="Chap03\Valid.aspx" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-3.5.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.0.js" />
     <Content Include="Scripts\jquery-3.5.0.min.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.min.js" />
+    <Content Include="Site.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +117,13 @@
     </Compile>
     <Compile Include="Chap03\Text.aspx.designer.cs">
       <DependentUpon>Text.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chap03\Valid.aspx.cs">
+      <DependentUpon>Valid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap03\Valid.aspx.designer.cs">
+      <DependentUpon>Valid.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
