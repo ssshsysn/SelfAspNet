@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Chap03\CheckBox.aspx" />
+    <Content Include="Chap03\FileUpload.aspx" />
     <Content Include="Chap03\RadioButton.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -79,6 +80,13 @@
     </Compile>
     <Compile Include="Chap03\CheckBox.aspx.designer.cs">
       <DependentUpon>CheckBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chap03\FileUpload.aspx.cs">
+      <DependentUpon>FileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap03\FileUpload.aspx.designer.cs">
+      <DependentUpon>FileUpload.aspx</DependentUpon>
     </Compile>
     <Compile Include="Chap03\RadioButton.aspx.cs">
       <DependentUpon>RadioButton.aspx</DependentUpon>
@@ -102,7 +110,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="App_Data\doc\" />
     <Folder Include="App_Start\" />
     <Folder Include="Chap02\" />
     <Folder Include="Chap04\" />
