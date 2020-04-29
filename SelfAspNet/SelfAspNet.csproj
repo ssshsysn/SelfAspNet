@@ -87,6 +87,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="App_Start\" />
+    <Folder Include="Chap02\" />
+    <Folder Include="Chap03\" />
+    <Folder Include="Chap04\" />
+    <Folder Include="Chap05\" />
+    <Folder Include="Chap06\" />
+    <Folder Include="Chap07\" />
+    <Folder Include="Chap08\" />
+    <Folder Include="Chap09\" />
+    <Folder Include="Chap10\" />
+    <Folder Include="Chap11\" />
+    <Folder Include="Image\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
