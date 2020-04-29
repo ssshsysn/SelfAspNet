@@ -31,8 +31,8 @@
             <asp:TextBox ID="txtEmail2" runat="server" Columns="50"></asp:TextBox>
             <asp:CompareValidator ID="cmpEmail2" runat="server" ControlToCompare="txtEmail" ControlToValidate="txtEmail2" CssClass="valid" ErrorMessage="E-MailとE-Mail(確認)は同一になる必要があります。" SetFocusOnError="True" ValidationGroup="MyValid"></asp:CompareValidator>
             <br />
-            <asp:Button ID="btnSubmit" runat="server" Text="決定" OnClick="btnSubmit_Click" />
-            <asp:Button ID="btnClear" runat="server" Text="クリア" ValidationGroup="MyValid" />
+            <asp:Button ID="btnSubmit" runat="server" Text="決定" OnClick="btnSubmit_Click" ValidationGroup="MyValid" />
+            <asp:Button ID="btnClear" runat="server" Text="クリア" />
             <br />
             <asp:Label ID="lblResult" runat="server"></asp:Label>
             <br />
