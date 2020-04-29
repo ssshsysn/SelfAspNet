@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         <div>
             アップロードファイル：</div>
-        <asp:FileUpload ID="upload" runat="server" Width="342px" />
+        <asp:FileUpload ID="upload" runat="server" AllowMultiple="True" Width="342px" />
         <p>
             <asp:Button ID="btnUpload" runat="server" OnClick="btnUpload_Click" Text="アップロード" />
         </p>

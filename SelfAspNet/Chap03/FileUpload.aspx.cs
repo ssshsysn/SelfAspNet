@@ -17,12 +17,13 @@ namespace SelfAspNet.Chap03
 
         protected void btnUpload_Click(object sender, EventArgs e)
         {
-            if (upload.HasFile)
+            var result = "";
+
+            foreach(HttpPostedFile f in upload.PostedFiles)
             {
-                var postfile = upload.PostedFile;
-                var uppath = Server.MapPath($"~/App_Data/doc/{Path.GetFileName(postfile.FileName)}");
-                postfile.SaveAs(uppath);
-                lblResult.Text = $"{postfile.FileName}をアップロードしました。";
+                f.SaveAs(Server.MapPath($"~/App_Data/doc/{Path.GetFileName(f.FileName)}"));
+                result += $"{f.FileName}";
+                lblResult.Text = $"{result}をアップロードしました。";
             }
         }
     }
