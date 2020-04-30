@@ -77,6 +77,7 @@
     <Content Include="Chap03\RadioButton.aspx" />
     <Content Include="Chap03\Text.aspx" />
     <Content Include="Chap03\Valid.aspx" />
+    <Content Include="Chap04\GridView.aspx" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-3.5.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.0.js" />
@@ -129,6 +130,13 @@
     <Compile Include="Chap03\Valid.aspx.designer.cs">
       <DependentUpon>Valid.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Chap04\GridView.aspx.cs">
+      <DependentUpon>GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap04\GridView.aspx.designer.cs">
+      <DependentUpon>GridView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -149,7 +157,6 @@
     <Folder Include="App_Data\doc\" />
     <Folder Include="App_Start\" />
     <Folder Include="Chap02\" />
-    <Folder Include="Chap04\" />
     <Folder Include="Chap05\" />
     <Folder Include="Chap06\" />
     <Folder Include="Chap07\" />
