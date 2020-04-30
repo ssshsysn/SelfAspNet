@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\SelfAsp.mdf" />
+    <Content Include="App_Data\SelfAsp_log.ldf">
+      <DependentUpon>SelfAsp.mdf</DependentUpon>
+    </Content>
     <Content Include="Chap03\CheckBox.aspx" />
     <Content Include="Chap03\Esxape.aspx" />
     <Content Include="Chap03\FileUpload.aspx" />
