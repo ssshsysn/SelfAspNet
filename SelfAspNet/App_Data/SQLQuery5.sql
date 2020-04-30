@@ -1,1 +1,1 @@
-﻿select title,price, published  from Book order by price, published desc
+﻿select publish, avg(price) as avg_price from Book group by publish
