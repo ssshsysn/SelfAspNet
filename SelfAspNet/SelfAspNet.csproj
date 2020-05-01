@@ -80,6 +80,22 @@
     <Content Include="Chap04\GridView.aspx" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-3.5.0.intellisense.js" />
+    <Content Include="Image\A0001.jpg" />
+    <Content Include="Image\A0002.jpg" />
+    <Content Include="Image\A0003.jpg" />
+    <Content Include="Image\A0004.jpg" />
+    <Content Include="Image\ajax-loader.gif" />
+    <Content Include="Image\asc.png" />
+    <Content Include="Image\desc.png" />
+    <Content Include="Image\go.gif" />
+    <Content Include="Image\lens.gif" />
+    <Content Include="Image\Login.gif" />
+    <Content Include="Image\Logout.gif" />
+    <Content Include="Image\S0001.jpg" />
+    <Content Include="Image\S0002.jpg" />
+    <Content Include="Image\S0003.jpg" />
+    <Content Include="Image\T0001.jpg" />
+    <Content Include="Image\T0002.jpg" />
     <Content Include="Scripts\jquery-3.5.0.js" />
     <Content Include="Scripts\jquery-3.5.0.min.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.js" />
@@ -164,7 +180,6 @@
     <Folder Include="Chap09\" />
     <Folder Include="Chap10\" />
     <Folder Include="Chap11\" />
-    <Folder Include="Image\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
