@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:FormView ID="fv" runat="server" AllowPaging="True" CellPadding="4" DataKeyNames="isbn" DataSourceID="sds" ForeColor="#333333">
+            <asp:FormView ID="fv" runat="server" AllowPaging="True" CellPadding="4" DataKeyNames="isbn" DataSourceID="sds" ForeColor="#333333" OnItemUpdated="fv_ItemUpdated" OnItemUpdating="fv_ItemUpdating">
                 <EditItemTemplate>
                     isbn:
                     <asp:Label ID="isbnLabel1" runat="server" Text='<%# Eval("isbn") %>' />

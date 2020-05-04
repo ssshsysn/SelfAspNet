@@ -13,5 +13,20 @@ namespace SelfAspNet.Chap04
         {
 
         }
+
+        protected void fv_ItemUpdated(object sender, FormViewUpdatedEventArgs e)
+        {
+            //fv.DefaultMode = FormViewMode.Insert;
+        }
+
+        protected void fv_ItemUpdating(object sender, FormViewUpdateEventArgs e)
+        {
+            var txtPrice = (TextBox)fv.FindControl("priceTextBox");
+            if (Int32.Parse(txtPrice.Text) <= 0)
+            //if (Int32.Parse(e.NewValues["price"].ToString()) <= 0)
+            {
+                e.NewValues["price"] = e.OldValues["price"];
+            }
+        }
     }
 }
