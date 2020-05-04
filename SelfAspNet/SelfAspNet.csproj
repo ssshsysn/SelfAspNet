@@ -81,6 +81,7 @@
     <Content Include="Chap04\FowrmView.aspx" />
     <Content Include="Chap04\GridView.aspx" />
     <Content Include="Chap04\ListView.aspx" />
+    <Content Include="Chap04\ListViewGroup.aspx" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-3.5.0.intellisense.js" />
     <Content Include="Image\A0001.jpg" />
@@ -176,6 +177,13 @@
     </Compile>
     <Compile Include="Chap04\ListView.aspx.designer.cs">
       <DependentUpon>ListView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chap04\ListViewGroup.aspx.cs">
+      <DependentUpon>ListViewGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap04\ListViewGroup.aspx.designer.cs">
+      <DependentUpon>ListViewGroup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
