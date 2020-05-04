@@ -82,6 +82,7 @@
     <Content Include="Chap04\GridView.aspx" />
     <Content Include="Chap04\ListView.aspx" />
     <Content Include="Chap04\ListViewGroup.aspx" />
+    <Content Include="Chap05\SqlParam.aspx" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-3.5.0.intellisense.js" />
     <Content Include="Image\A0001.jpg" />
@@ -185,6 +186,13 @@
     <Compile Include="Chap04\ListViewGroup.aspx.designer.cs">
       <DependentUpon>ListViewGroup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Chap05\SqlParam.aspx.cs">
+      <DependentUpon>SqlParam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap05\SqlParam.aspx.designer.cs">
+      <DependentUpon>SqlParam.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -205,7 +213,6 @@
     <Folder Include="App_Data\doc\" />
     <Folder Include="App_Start\" />
     <Folder Include="Chap02\" />
-    <Folder Include="Chap05\" />
     <Folder Include="Chap06\" />
     <Folder Include="Chap07\" />
     <Folder Include="Chap08\" />
