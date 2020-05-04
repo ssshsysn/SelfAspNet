@@ -80,6 +80,7 @@
     <Content Include="Chap04\FormViewCustom.aspx" />
     <Content Include="Chap04\FowrmView.aspx" />
     <Content Include="Chap04\GridView.aspx" />
+    <Content Include="Chap04\ListView.aspx" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-3.5.0.intellisense.js" />
     <Content Include="Image\A0001.jpg" />
@@ -168,6 +169,13 @@
     </Compile>
     <Compile Include="Chap04\GridView.aspx.designer.cs">
       <DependentUpon>GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chap04\ListView.aspx.cs">
+      <DependentUpon>ListView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap04\ListView.aspx.designer.cs">
+      <DependentUpon>ListView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
