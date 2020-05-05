@@ -83,6 +83,7 @@
     <Content Include="Chap04\ListView.aspx" />
     <Content Include="Chap04\ListViewGroup.aspx" />
     <Content Include="Chap05\PhotoUpload.aspx" />
+    <Content Include="Chap05\SqlStored.aspx" />
     <Content Include="Chap05\SqlParam.aspx" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-3.5.0.intellisense.js" />
@@ -193,6 +194,13 @@
     </Compile>
     <Compile Include="Chap05\PhotoUpload.aspx.designer.cs">
       <DependentUpon>PhotoUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chap05\SqlStored.aspx.cs">
+      <DependentUpon>SqlStored.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap05\SqlStored.aspx.designer.cs">
+      <DependentUpon>SqlStored.aspx</DependentUpon>
     </Compile>
     <Compile Include="Chap05\SqlParam.aspx.cs">
       <DependentUpon>SqlParam.aspx</DependentUpon>

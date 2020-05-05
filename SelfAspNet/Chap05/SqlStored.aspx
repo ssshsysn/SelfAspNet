@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SqlParam.aspx.cs" Inherits="SelfAspNet.Chap05.SqlParam" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SqlStored.aspx.cs" Inherits="SelfAspNet.Chap05.SqlStored" %>
 
 <!DOCTYPE html>
 
@@ -11,7 +11,10 @@
     <form id="form1" runat="server">
         <div>
             <asp:RadioButtonList ID="list" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="sds_list" DataTextField="category" DataValueField="category" RepeatDirection="Horizontal">
+                <asp:ListItem Selected="True">無選択</asp:ListItem>
             </asp:RadioButtonList>
+            <asp:Label ID="lblNum" runat="server" Text="Label"></asp:Label>
+            <br />
             <asp:SqlDataSource ID="sds_list" runat="server" ConnectionString="<%$ ConnectionStrings:SelfApp %>" SelectCommand="SELECT DISTINCT [category] FROM [Album] ORDER BY [category]"></asp:SqlDataSource>
             <asp:GridView ID="grid" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="aid" DataSourceID="sds" ForeColor="Black" GridLines="Vertical">
                 <AlternatingRowStyle BackColor="White" />
@@ -37,9 +40,10 @@
                 <SortedDescendingCellStyle BackColor="#EAEAD3" />
                 <SortedDescendingHeaderStyle BackColor="#575357" />
             </asp:GridView>
-            <asp:SqlDataSource ID="sds" runat="server" ConnectionString="<%$ ConnectionStrings:SelfApp %>" OnSelected="sds_Selected" SelectCommand="SELECT [aid], [category], [comment], [updated], [favorite] FROM [Album] WHERE ([category] = @category)">
+            <asp:SqlDataSource ID="sds" runat="server" ConnectionString="<%$ ConnectionStrings:SelfApp %>" SelectCommand="AlbumFilter" OnSelected="sds_Selected" SelectCommandType="StoredProcedure">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="list" Name="category" PropertyName="SelectedValue" Type="String" />
+                    <asp:Parameter Direction="Output" Name="recnum" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
         </div>

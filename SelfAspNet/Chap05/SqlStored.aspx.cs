@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SelfAspNet.Chap05
 {
-    public partial class SqlParam : System.Web.UI.Page
+    public partial class SqlStored : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,7 +16,7 @@ namespace SelfAspNet.Chap05
 
         protected void sds_Selected(object sender, SqlDataSourceStatusEventArgs e)
         {
-
+            lblNum.Text = e.Command.Parameters["@recnum"].Value.ToString();
         }
     }
 }
