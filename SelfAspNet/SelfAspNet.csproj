@@ -84,6 +84,7 @@
     <Content Include="Chap04\ListViewGroup.aspx" />
     <Content Include="Chap05\ExecuteReader.aspx" />
     <Content Include="Chap05\NonAccess.aspx" />
+    <Content Include="Chap05\ObjectParam.aspx" />
     <Content Include="Chap05\PhotoUpload.aspx" />
     <Content Include="Chap05\SqlStored.aspx" />
     <Content Include="Chap05\SqlParam.aspx" />
@@ -190,6 +191,7 @@
     <Compile Include="Chap04\ListViewGroup.aspx.designer.cs">
       <DependentUpon>ListViewGroup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Chap05\Album.cs" />
     <Compile Include="Chap05\ExecuteReader.aspx.cs">
       <DependentUpon>ExecuteReader.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -203,6 +205,13 @@
     </Compile>
     <Compile Include="Chap05\NonAccess.aspx.designer.cs">
       <DependentUpon>NonAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chap05\ObjectParam.aspx.cs">
+      <DependentUpon>ObjectParam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap05\ObjectParam.aspx.designer.cs">
+      <DependentUpon>ObjectParam.aspx</DependentUpon>
     </Compile>
     <Compile Include="Chap05\PhotoUpload.aspx.cs">
       <DependentUpon>PhotoUpload.aspx</DependentUpon>
