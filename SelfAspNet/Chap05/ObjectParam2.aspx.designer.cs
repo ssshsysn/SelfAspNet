@@ -33,6 +33,15 @@ namespace SelfAspNet.Chap05
         protected global::System.Web.UI.WebControls.RadioButtonList list;
 
         /// <summary>
+        /// sds_list コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource sds_list;
+
+        /// <summary>
         /// GridView1 コントロール。
         /// </summary>
         /// <remarks>
@@ -40,5 +49,14 @@ namespace SelfAspNet.Chap05
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
+
+        /// <summary>
+        /// sds コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource sds;
     }
 }
