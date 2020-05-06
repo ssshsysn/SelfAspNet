@@ -51,6 +51,15 @@ namespace SelfAspNet.Chap05
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
+        /// ObjectDataSource1 コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSource1;
+
+        /// <summary>
         /// sds コントロール。
         /// </summary>
         /// <remarks>

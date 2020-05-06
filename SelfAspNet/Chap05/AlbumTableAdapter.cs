@@ -14,8 +14,7 @@ namespace SelfAspNet.Chap05.AlbumDataSetTableAdapters
         [DataObjectMethod(DataObjectMethodType.Select, true)]
         public DataSet GetAlbumData(String category)
         {
-            ConnectionStringSettings setting =
-                ConfigurationManager.ConnectionStrings["SelfApp"];
+            ConnectionStringSettings setting = ConfigurationManager.ConnectionStrings["SelfApp"];
             var db = new SqlConnection(setting.ConnectionString);
             var comm = new SqlCommand();
             comm.Connection = db;
