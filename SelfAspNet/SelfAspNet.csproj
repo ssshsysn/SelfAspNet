@@ -83,6 +83,7 @@
     <Content Include="Chap04\ListView.aspx" />
     <Content Include="Chap04\ListViewGroup.aspx" />
     <Content Include="Chap05\ExecuteReader.aspx" />
+    <Content Include="Chap05\NonAccess.aspx" />
     <Content Include="Chap05\PhotoUpload.aspx" />
     <Content Include="Chap05\SqlStored.aspx" />
     <Content Include="Chap05\SqlParam.aspx" />
@@ -195,6 +196,13 @@
     </Compile>
     <Compile Include="Chap05\ExecuteReader.aspx.designer.cs">
       <DependentUpon>ExecuteReader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chap05\NonAccess.aspx.cs">
+      <DependentUpon>NonAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap05\NonAccess.aspx.designer.cs">
+      <DependentUpon>NonAccess.aspx</DependentUpon>
     </Compile>
     <Compile Include="Chap05\PhotoUpload.aspx.cs">
       <DependentUpon>PhotoUpload.aspx</DependentUpon>
